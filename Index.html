@@ -10,17 +10,18 @@
     <style>
 
         .navbar{
-            background-color: rgba(47, 72, 88, 0.3 ) ;
+            background-color: rgba(47, 72, 88, 0.6 ) ;
         }
         .rodape{
-            background-color: rgb(0, 0, 0);
-            font-size: 30px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #d5b697;
+            font-size: 22.5px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             text-align: center;
-            height: 300px;
-            box-shadow: 0px -10px 10px rgba(128, 126, 126, 0.8);
-            line-height: 300px;
-            margin-top: 25px;
+            box-shadow: 0px -10px 10px rgb(237, 221, 208);
+            line-height: 85px;
+            padding-top: 45px;
+            padding-bottom: 20px;
+            margin-top: 22.5px;
             border-radius: 5px;
             color: white;
         }
@@ -29,7 +30,7 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-transparente fixed-top">
         <!-- Just an image -->
         <nav class="navbar">
             <a class="navbar-brand" href="#">
@@ -43,20 +44,23 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#"></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
+                    Playlists
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">Pop</a>
+                        <a class="dropdown-item" href="#">Rock</a>
+                        <a class="dropdown-item" href="#">Country</a>
+                        <a class="dropdown-item" href="#">Eletônico</a>
+                        <a class="dropdown-item" href="#">Funk</a>
+                            <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Tudo</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -65,7 +69,9 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <button>
+                    <input type="image" src="Mídia/lupa.png" />
+                </button>
             </form>
         </div>
     </nav>
@@ -75,16 +81,21 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src=".../800x400?auto=yes&bg=777&fg=555&text=First slide" alt="First slide">
+                <img class="d-block w-100" src="Mídia/1989 taylor's version.jpg" alt="First slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Second slide" alt="Second slide">
+                <img class="d-block w-100" src="Mídia/GUTS.png" alt="Second slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block " src="Mídia/Vampire.webp" alt="Third slide">
+                <img class="d-block w-100" src="Mídia/super jão.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="Mídia/VMA.webp" alt="Fourth slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -98,59 +109,65 @@
     </div>
 
     <div class="row m-5">
-        <div class="card col-4" style="width: 18rem;">
-            <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+        <div class="card col-md-4 col-sm-12" style="width: 18rem;">
+            <br>
+            <img class="card-img-top" src="Mídia/80's.jpeg" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">Máquina do tempo: 80's</h5>
+                <p class="card-text">A década na qual o rock, o gótico, o pop e a música eletrônica se tornaram uma coisa só.</p>
+                <a href="#" class="btn btn-secondary">Leia Mais</a>
             </div>
         </div>
         
-        <div class="card col-4" style="width: 18rem;">
-            <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+        <div class="card col-md-4 col-sm-12" style="width: 18rem;">
+            <br>
+            <img class="card-img-top" src="Mídia/Indie.jpeg" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">Indie, o rock alternativo</h5>
+                <p class="card-text">O mundo contemporâneo em um estilo musical.</p>
+                <a href="#" class="btn btn-secondary">Leia Mais</a>
             </div>
         </div>
 
-        <div class="card col-4" style="width: 18rem;">
-            <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+        <div class="card col-md-4 col-sm-12" style="width: 18rem;">
+            <br>
+            <img class="card-img-top" src="Mídia/neto.jpeg" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">Como nossos pais</h5>
+                <p class="card-text">Músicas atemporais, aquelas que trancedem as barreiras do tempo.</p>
+                <a href="#" class="btn btn-secondary">Leia Mais</a>
             </div>
         </div>
     </div>
 
     <div class="row m-5">
-        <div class="card col-4" style="width: 18rem;">
-            <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+        <div class="card col-md-4 col-sm-12" style="width: 18rem;">
+            <br>
+            <img class="card-img-top" src="Mídia/Show.jpeg" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">O lugar onde a música ganha vida</h5>
+                <p class="card-text">A experiência única e intensa dos shows ao vivo.</p>
+                <a href="#" class="btn btn-secondary">Leia Mais</a>
             </div>
         </div>
             
-        <div class="card col-4" style="width: 18rem;">
-            <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+        <div class="card col-md-4 col-sm-12" style="width: 18rem;">
+            <br>
+            <img class="card-img-top" src="Mídia/pulando.jpeg" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">Pulando na cama</h5>
+                <p class="card-text">Músicas em que dançar é inevitável!</p>
+                <a href="#" class="btn btn-secondary">Leia Mais</a>
             </div>
         </div>
 
-        <div class="card col-4" style="width: 18rem;">
-            <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+        <div class="card col-md-4 col-sm-12" style="width: 18rem;">
+            <br>
+            <img class="card-img-top" src="Mídia/Tiktok.webp" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#id_modal">Go somewhere</a>
+                <h5 class="card-title">Músicas do TikTok</h5>
+                <p class="card-text">O que de bom viralizaram na plataforma vertical.</p>
+                <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#id_modal">Leia Mais</a>
             </div>
         </div>
     </div>
@@ -168,13 +185,19 @@
                     <p>Modal body text goes here.</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
     <div class="rodape">
-        Rodapé
+        <div class="row m-1">
+            <p class="col-md-3 col-sm-6 col-6">Termos de uso</p>
+            <p class="col-md-3 col-sm-6 col-6">Política de cookies</p>
+            <p class="col-md-3 col-sm-6 col-6">Política de Privacidade</p>
+            <p class="col-md-3 col-sm-6 col-6">Licença</p>
+        </div>
+        <p>&copy Curso Múltimídia SENAI</p>
     </div>
 </body>
 
